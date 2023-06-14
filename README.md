@@ -1,16 +1,16 @@
 # AD7SGPR-TokyoWeather
 Qiitaの記事用に作成したWEBAppのリポジトリです。  
 
-特徴  
+### 特徴  
 OpenWeatherMap APIを使用して東京の現在の気温を取得  
 取得した気温をブラウザ上で表示  
 Web Serial APIを使用して、取得した気温をシリアル通信で送信  
   
-必要なもの  
+### 必要なもの  
 OpenWeatherMap APIのAPIキー  
 Web Serial APIに対応したブラウザ (例: Google Chrome)
   
-使用方法  
+### 使用方法  
 index.htmlを開きます。  
 OpenWeatherMap APIのAPIキーを入力します。  
 取得開始 ボタンをクリックします。  
