@@ -11,7 +11,7 @@ OpenWeatherMap APIのAPIキー
 Web Serial APIに対応したブラウザ (例: Google Chrome)
   
 ### 使用方法  
-index.htmlを開きます。  
+[WebApp](https://bit-trade-one.github.io/AD7SGPR-TokyoWeather/)を開きます。  
 OpenWeatherMap APIのAPIキーを入力します。  
 取得開始 ボタンをクリックします。  
 指定したインターバル（秒）ごとに東京の気温を取得し、ブラウザ上に表示します。  
