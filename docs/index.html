@@ -120,7 +120,16 @@
 
     async function sendTemperature(temperature) {
       try {
-        await sendText(`${temperature}\r\n`);
+        // temperatureが文字列であればそのまま使用し、数値であれば文字列に変換
+        let temperatureString = typeof temperature === 'string' ? temperature : temperature.toString();
+
+        // 小数点を含むかどうかチェック
+        const decimalLength = temperatureString.includes('.') ? 1 : 0;
+
+        // padStartメソッドを用いて、文字列が(8 + 小数点の長さ)文字になるまで左側に空白を追加
+        temperatureString = temperatureString.padStart(8 + decimalLength, ' ');
+
+        await sendText(`${temperatureString}\r\n`);
       } catch (error) {
         console.error("Error sending temperature to serial port: ", error);
       }
